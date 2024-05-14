@@ -46,6 +46,7 @@ def set_telegram_webhook(webhook: str) -> dict:
 
 @app.head("/trello")
 async def accept_trello_webhook() -> dict:
+    print("yes")
     return {"status": "ok"}
 
 

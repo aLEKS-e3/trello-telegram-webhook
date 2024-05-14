@@ -1,6 +1,5 @@
 import asyncio
 import os
-import uvicorn
 
 from dotenv import load_dotenv
 
@@ -27,4 +26,3 @@ if __name__ == "__main__":
     asyncio.run(create_table())
     set_telegram_up(WEBHOOK_URL)
     set_trello_up(WEBHOOK_URL)
-    uvicorn.run(app, host="0.0.0.0", port=8000)

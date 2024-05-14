@@ -9,7 +9,6 @@ load_dotenv()
 
 API = os.getenv("TRELLO_API")
 TRELLO_TOKEN = os.getenv("TRELLO_TOKEN")
-WEBHOOK_URL = os.getenv("WEBHOOK")
 
 
 def get_query(name: str) -> dict:
